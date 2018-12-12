@@ -131,7 +131,7 @@ html[xmlns] .slides {display: block;}
     transition: .5s all;
 }
 .flex-control-paging li a.flex-active {
-    background: #02bbd2;
+    background: #FFC107;
     cursor: default; 
 	width: 50px;
 }

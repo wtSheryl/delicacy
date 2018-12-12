@@ -111,7 +111,7 @@ nav.navbar.navbar-default {
 
 .navbar_right ul li a:hover,
 .navbar_right ul li a.active {
-	color: #01e2ff !important;
+	color: #FFC107 !important;
 	transform: scale(1.1);
 }
 
@@ -325,7 +325,7 @@ p.about_content {
 	position: absolute;
 	bottom: -2em;
 	left: 0;
-	border-top: solid 2em #01e2ff;
+	border-top: solid 2em #FFC107;
 	border-left: solid 3.5em transparent;
 	border-right: solid 3.5em transparent;
 	transition: .5s all;
