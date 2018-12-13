@@ -299,7 +299,14 @@ p.about_content {
 .about_info i {
 	position: relative;
 	display: inline-block;
-	background-color: #01E2FF;
+	background: -webkit-linear-gradient(#FFC107, #DF9638);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FFC107, #DF9638);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FFC107, #DF9638);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FFC107, #DF9638);
+	/* 标准的语法（必须放在最后） */
 	width: 7em;
 	text-align: center;
 	padding: 1.8em 0 1.2em 0;
@@ -325,7 +332,7 @@ p.about_content {
 	position: absolute;
 	bottom: -2em;
 	left: 0;
-	border-top: solid 2em #FFC107;
+	border-top: solid 2em #DF9638;
 	border-left: solid 3.5em transparent;
 	border-right: solid 3.5em transparent;
 	transition: .5s all;
@@ -375,7 +382,7 @@ p.about_content {
 }
 
 .about_info_rotate:hover .overturn {
-	background-color: #FFC107;
+	background-color: #DF9638;
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
@@ -384,7 +391,7 @@ p.about_content {
 }
 
 .about_info_rotate:hover .overturn:after {
-	border-top-color: #FFC107;
+	border-top-color: #DF9638;
 }
 
 
@@ -404,10 +411,11 @@ p.about_content {
 
 .services_info img {
 	width: 100%;
+	height: 100%;
 }
 
 .services_info_text {
-	padding: 4em;
+	padding: 3em;
 }
 
 .services_info_text h3 {
@@ -421,6 +429,10 @@ p.about_content {
 	position: relative;
 	text-align: center;
 	cursor: default;
+}
+
+.services_info_img img {
+	height: inherit;
 }
 
 .mask,
@@ -442,11 +454,11 @@ p.about_content {
 	height: 180%;
 	right: 0;
 	left: auto;
-	transform: rotate(56.5deg) translateX(-280px);
-	-webkit-transform: rotate(56.5deg) translateX(-280px);
-	-moz-transform: rotate(56.5deg) translateX(-280px);
-	-ms-transform: rotate(56.5deg) translateX(-280px);
-	-o-transform: rotate(56.5deg) translateX(-280px);
+	transform: rotate(56.5deg) translateX(-260px);
+	-webkit-transform: rotate(56.5deg) translateX(-260px);
+	-moz-transform: rotate(56.5deg) translateX(-260px);
+	-ms-transform: rotate(56.5deg) translateX(-260px);
+	-o-transform: rotate(56.5deg) translateX(-260px);
 	transform-origin: 100% 0%;
 	-webkit-transform-origin: 100% 0%;
 	-moz-transform-origin: 100% 0%;
@@ -455,11 +467,11 @@ p.about_content {
 }
 
 .servies_info_img:hover .mask_top {
-	transform: rotate(48.5deg) translateX(1px);
-	-webkit-transform: rotate(48.5deg) translateX(1px);
-	-moz-transform: rotate(48.5deg) translateX(1px);
-	-ms-transform: rotate(48.5deg) translateX(1px);
-	-o-transform: rotate(48.5deg) translateX(1px);
+	transform: rotate(56.5deg) translateX(1px);
+	-webkit-transform: rotate(56.5deg) translateX(1px);
+	-moz-transform: rotate(56.5deg) translateX(1px);
+	-ms-transform: rotate(56.5deg) translateX(1px);
+	-o-transform: rotate(56.5deg) translateX(1px);
 }
 
 .mask_bottom {
@@ -468,11 +480,11 @@ p.about_content {
 	height: 180%;
 	top: auto;
 	bottom: 0;
-	transform: rotate(56.5deg) translateX(280px);
-	-webkit-transform: rotate(56.5deg) translateX(280px);
-	-moz-transform: rotate(56.5deg) translateX(280px);
-	-ms-transform: rotate(56.5deg) translateX(280px);
-	-o-transform: rotate(56.5deg) translateX(280px);
+	transform: rotate(56.5deg) translateX(260px);
+	-webkit-transform: rotate(56.5deg) translateX(260px);
+	-moz-transform: rotate(56.5deg) translateX(260px);
+	-ms-transform: rotate(56.5deg) translateX(260px);
+	-o-transform: rotate(56.5deg) translateX(260px);
 	transform-origin: 0% 100%;
 	-webkit-transform-origin: 0% 100%;
 	-moz-transform-origin: 0% 100%;
@@ -481,11 +493,11 @@ p.about_content {
 }
 
 .servies_info_img:hover .mask_bottom {
-	transform: rotate(48.5deg) translateX(-1px);
-	-webkit-transform: rotate(48.5deg) translateX(-1px);
-	-moz-transform: rotate(48.5deg) translateX(-1px);
-	-ms-transform: rotate(48.5deg) translateX(-1px);
-	-o-transform: rotate(48.5deg) translateX(-1px);
+	transform: rotate(56.5deg) translate(-1px);
+	-webkit-transform: rotate(56.5deg) translate(-1px);
+	-moz-transform: rotate(56.5deg) translate(-1px);
+	-ms-transform: rotate(56.5deg) translate(-1px);
+	-o-transform: rotate(56.5deg) translate(-1px);
 }
 
 .content {
@@ -496,7 +508,7 @@ p.about_content {
 	/*Ie6-8*/
 	filter: alpha(opacity=50);
 	opacity: 0.5;
-	width: 361px;
+	width: 95%;
 	overflow: hidden;
 	-webkit-transform: rotate(-33.5deg) translate(-112px, -166px);
 	-moz-transform: rotate(-33.5deg) translate(-112px, 166px);
@@ -523,13 +535,13 @@ p.about_content {
 }
 
 .servies_info_img:hover .content {
-	height: 120px;
-	width: 300px;
+	height: 50%;
+	width: 80%;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 	filter: alpha(opacity=90);
 	opacity: 0.9;
-	top: 30%;
-	left: 12%;
+	top: 25%;
+	left: 10%;
 	-webkit-transform: rotate(0deg) translate(0, 0);
 	-moz-transform: rotate(0deg) translate(0, 0);
 	-o-transform: rotate(0deg) translate(0, 0);
@@ -1164,6 +1176,9 @@ p.about_content {
 }
 
 @media(max-width:980px) {
+	.nav_logo a img {
+		width: 70%;
+	}
 	.header_navigation ul li {
 		display: inline-block;
 		margin: 0 .8em 0 0;
@@ -1183,6 +1198,9 @@ p.about_content {
 }
 
 @media (min-width: 768px) and (max-width: 870px) {
+	.nav_logo a img {
+		width: 70%;
+	}
 	.banner_text {
 		padding: 10% 0 0;
 	}
@@ -1252,6 +1270,10 @@ p.about_content {
 		line-height: 1.4em;
 		margin: 1em 0 .3em;
 	}
+	.footer_logo h1 {
+		width: 35%;
+		float: left;
+	}
 }
 
 @media(max-width: 323px) {
@@ -1263,5 +1285,8 @@ p.about_content {
 	}
 	.banner_content h4 {
 		font-size: .8em;
+	}
+	.footer_logo h1 {
+		width: 75%;
 	}
 }
