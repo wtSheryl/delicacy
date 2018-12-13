@@ -595,7 +595,7 @@ p.about_content {
 
 .social_info {
 	position: absolute;
-	left: -200%;
+	left: -400%;
 	padding: 1em;
 	background: #555555;
 	bottom: 0;
@@ -974,7 +974,7 @@ p.about_content {
 
 .contact_form input[type="submit"]:hover {
 	background: none;
-	border: 2px solid #FFC107;
+	border: 1px solid #FFC107;
 	color: #FFC107;
 	border-radius: 3px;
 }
@@ -1002,7 +1002,6 @@ p.about_content {
 	font-size: 3.2em;
 	color: #FFFFFF;
 	letter-spacing: 8px;
-	text-transform: uppercase;
 	padding-bottom: 1em;
 	font-style: italic;
 }
@@ -1016,8 +1015,8 @@ p.about_content {
 	padding: .6em 0em .6em .6em;
 	color: #FFFFFF;
 	margin-right: 2em;
-	width: 45%;
-	float: left;
+	/*width: 45%;*/
+	/*float: left;*/
 }
 
 .signup_form input[type="text"]::-webkit-input-placeholder,
@@ -1026,23 +1025,24 @@ p.about_content {
 }
 
 .signup_form input[type="email"] {
-	float: right;
-	margin-right: 0em;
+	/*float: right;*/
+/*	margin-right: 0em;*/
 }
 
 .signup_form input[type="submit"] {
 	width: 45%;
 	border: none;
 	background: #FFC107;
+	border: 1px solid #FFC107;
 	outline: none;
-	padding: .8em 0;
+	padding: .8em 1em;
 	margin-top: 2em;
 	color: #FFFFFF;
 }
 
 .signup_form input[type="submit"]:hover {
 	border: 1px solid #FFC107;
-	background: none;
+	background: rgba(255,255,255,0);
 }
 
 .footer {
